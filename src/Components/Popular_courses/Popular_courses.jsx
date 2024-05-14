@@ -11,7 +11,7 @@ const Popular_courses = () => {
   const axiosPublic = useAxiosPublic();
   useEffect(() => {
     axiosPublic.get("/courses").then((res) => {
-      setAll_courses(res.data);
+      setAll_courses(res.data.result);
     });
   }, [axiosPublic]);
 
