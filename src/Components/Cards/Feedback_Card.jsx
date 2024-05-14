@@ -8,13 +8,13 @@ const Feedback_Card = () => {
       rating: 4.5,
       total_rating: 44,
     },
-    feedback: "Perfect!",
+    feedback: "Very Good!!",
     feedback_description:
       "Provides educational consulting services for student- clients who want to study in Canada with the application process.",
     author: {
-      img: "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938",
-      name: "Ashley Coleman",
-      course_category: "Development",
+      img: "https://i.ibb.co/ftwjcff/student-Fedback.webp",
+      name: "Farabi Cogitlo",
+      course_category: "Research",
     },
   };
 
