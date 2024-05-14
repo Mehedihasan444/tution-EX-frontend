@@ -8,7 +8,7 @@ const About_Us = () => {
       <div
         className="bg-fixed rounded-md"
         style={{
-          backgroundImage: `url("https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2024/01/about-1.jpg")`,
+          backgroundImage: `url("https://i.ibb.co/ggBJ4xZ/pexels-pixabay-356056.jpg")`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
