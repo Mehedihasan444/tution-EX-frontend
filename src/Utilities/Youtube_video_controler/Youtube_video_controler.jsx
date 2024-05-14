@@ -1,4 +1,5 @@
 import YouTube from 'react-youtube';
+import PropTypes from 'prop-types';
 
 const Youtube_video_controler = ({vId}) => {
 
@@ -11,7 +12,6 @@ const Youtube_video_controler = ({vId}) => {
         height: '500',
         width: '750',
         playerVars: {
-          //  https://developers.google.com/youtube/player_parameters
           autoplay: 1,
         },
       };
@@ -19,3 +19,8 @@ const Youtube_video_controler = ({vId}) => {
 };
 
 export default Youtube_video_controler;
+
+
+Youtube_video_controler.propTypes = {
+  vId: PropTypes.string.isRequired,
+};

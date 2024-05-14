@@ -1,0 +1,400 @@
+[
+
+    {
+        
+        "title":"Web Development with PHP & Laravel",
+        "description":"",
+        "price":40,
+        "discount":0,
+        "image":"https://asset.uibucket.net/html/ilearning/assets/images/course/course-4.png",
+        "category":"Development",
+        "sub_category":"Web Development",
+        "avg_rating": 4.2,
+        "no_rating":36,
+        "no_enrollment":20,
+        "no_lesson":10,
+        "starting_date":"06-06-2024",
+        "intro":{
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+          },
+        
+        "playlist":[{
+            "videoId": "Rek0NWPCNOc",
+            "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+            "duration": "37:54"
+          },
+          {
+            "videoId": "2QR11oDukn4",
+            "title":"HTML Course | World's most premium HTML Course | Lecture 2",
+            "duration": "32:15"
+          },
+          {
+            "videoId": "jRAZlTEZi9I",
+            "title":"HTML Course | Media Elements | Lecture 3",
+            "duration": "26:01"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          }
+          ],
+        "author":{
+            "author_id":1,
+            "author_name":"abcd",
+            "author_email":"abcd@gmail.com",
+            "author_phone":"017XXXXXXXX",
+            "author_img":"https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        }
+      
+    },
+    {
+        
+        "title":"Learn Figma - UI/UX Desgin Essential Traning",
+        "description":"",
+        "price":22,
+        "discount":0,
+        "image":"https://asset.uibucket.net/html/ilearning/assets/images/course/course-6.png",
+        "category":"Design",
+        "sub_category":"Graphics Design",
+        "avg_rating": 4.2,
+        "no_rating":6,
+        "no_enrollment":2,
+        "no_lesson":101,
+        "starting_date":"02-06-2024",
+        "intro":{
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+          },
+        
+        "playlist":[{
+            "videoId": "Rek0NWPCNOc",
+            "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+            "duration": "37:54"
+          },
+          {
+            "videoId": "2QR11oDukn4",
+            "title":"HTML Course | World's most premium HTML Course | Lecture 2",
+            "duration": "32:15"
+          },
+          {
+            "videoId": "jRAZlTEZi9I",
+            "title":"HTML Course | Media Elements | Lecture 3",
+            "duration": "26:01"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          }
+          ],
+        "author":{
+            "author_id":2,
+            "author_name":"efgh",
+            "author_email":"efgh@gmail.com",
+            "author_phone":"017XXXXXXXX",
+            "author_img":"https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        }
+      
+    },
+    {
+        
+        "title":"Wild life Photography with XYZ",
+        "description":"",
+        "price":30,
+        "discount":0,
+        "image":"https://asset.uibucket.net/html/ilearning/assets/images/course/course-5.png",
+        "category":"Photography",
+        "sub_category":"Wild life Photography",
+        "avg_rating": 4.2,
+        "no_rating":36,
+        "no_enrollment":20,
+        "no_lesson":10,
+        "starting_date":"06-06-2024",
+        "intro":{
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+          },
+        
+        "playlist":[{
+            "videoId": "Rek0NWPCNOc",
+            "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+            "duration": "37:54"
+          },
+          {
+            "videoId": "2QR11oDukn4",
+            "title":"HTML Course | World's most premium HTML Course | Lecture 2",
+            "duration": "32:15"
+          },
+          {
+            "videoId": "jRAZlTEZi9I",
+            "title":"HTML Course | Media Elements | Lecture 3",
+            "duration": "26:01"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          }
+          ],
+        "author":{
+            "author_id":3,
+            "author_name":"ijkl",
+            "author_email":"ijkl@gmail.com",
+            "author_phone":"017XXXXXXXX",
+            "author_img":"https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        }
+      
+    }
+]
+
+
+purchasesList=[
+  {
+    course_id: 5434,
+              title: ksdhfjsd,
+              price: 34,
+              total_bill: 4354,
+              purchase: false,
+              payment: false,
+  },
+  {
+    course_id: 5434,
+              title: rhe,
+              price: 45,
+              total_bill: 435s4,
+              purchase: false,
+              payment: false,
+  }
+]
+
+    // static data
+  // const all_courses = [
+  //   {
+  //     _id: 1,
+  //     category: "Photography",
+  //     img: "https://img.freepik.com/free-vector/students-using-e-learning-platform-video-laptop-graduation-cap-online-education-platform-e-learning-platform-online-teaching-concept_335657-795.jpg",
+  //     rating: {
+  //       rating: 5,
+  //       total_rating: 44,
+  //     },
+  //     title: "Web Development with PHP & Laravel",
+  //     price: 74.0,
+  //     no_enrollment: 55,
+  //     no_lesson: 24,
+  //     starting_date: "14-05-2025",
+  //     author: {
+  //       img: "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938",
+  //       name: "Ashley Coleman",
+  //     },
+  //   },
+  //   {
+  //     _id: 2,
+  //     category: "Design",
+  //     img: "https://asset.uibucket.net/html/ilearning/assets/images/course/course-5.png",
+  //     rating: {
+  //       rating: 4.5,
+  //       total_rating: 44,
+  //     },
+  //     title: "AWS Solutions Architect Association Program",
+  //     price: 34.0,
+  //     no_enrollment: 55,
+  //     no_lesson: 24,
+  //     starting_date: "14-02-2025",
+  //     author: {
+  //       img: "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938",
+  //       name: "Ashley Coleman",
+  //     },
+  //   },
+  //   {
+  //     _id: 3,
+  //     category: "Development",
+  //     img: "https://asset.uibucket.net/html/ilearning/assets/images/course/course-4.png",
+  //     rating: {
+  //       rating: 4.5,
+  //       total_rating: 44,
+  //     },
+  //     title: "Learn Figma - UI/UX Desgin Essential Traning",
+  //     price: 34.0,
+  //     no_enrollment: 55,
+  //     no_lesson: 24,
+  //     starting_date: "14-02-2025",
+  //     author: {
+  //       img: "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938",
+  //       name: "Ashley Coleman",
+  //     },
+  //   },
+  //   {
+  //     _id: 4,
+  //     category: "Sales Marketing",
+  //     img: "https://img.freepik.com/free-vector/students-using-e-learning-platform-video-laptop-graduation-cap-online-education-platform-e-learning-platform-online-teaching-concept_335657-795.jpg",
+  //     rating: {
+  //       rating: 4.5,
+  //       total_rating: 44,
+  //     },
+  //     title: "AWS Solutions Architect Association Program",
+  //     price: 34.0,
+  //     no_enrollment: 55,
+  //     no_lesson: 24,
+  //     starting_date: "14-02-2025",
+  //     author: {
+  //       img: "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938",
+  //       name: "Ashley Coleman",
+  //     },
+  //   },
+  //   {
+  //     _id: 5,
+  //     category: "Data Science",
+  //     img: "https://img.freepik.com/free-vector/students-using-e-learning-platform-video-laptop-graduation-cap-online-education-platform-e-learning-platform-online-teaching-concept_335657-795.jpg",
+  //     rating: {
+  //       rating: 4.5,
+  //       total_rating: 44,
+  //     },
+  //     title: "AWS Solutions Architect Association Program",
+  //     price: 34.0,
+  //     no_enrollment: 55,
+  //     no_lesson: 24,
+  //     starting_date: "14-02-2025",
+  //     author: {
+  //       img: "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938",
+  //       name: "Ashley Coleman",
+  //     },
+  //   },
+  // ];
+
+
+
+
+    // static data
+  // const playlist = [
+  //   {
+  //     videoId: "ED2JZahFo6w",
+  //     title: "শোলমাছের ঝাল | Double Gopal | Full Episode",
+  //     duration: "43:50",
+  //   },
+  //   {
+  //     videoId: "A3mz0swGakw",
+  //     title:
+  //       "মন্ত্রীর দিতিয় বিয়ে | Gopal Bhar ( Bengali ) | Double Gopal | Full Episode",
+  //     duration: "45:15",
+  //   },
+  //   {
+  //     videoId: "iJWqAzdfUJY",
+  //     title:
+  //       "বোকা ডাকাত | Gopal Bhar ( Bengali ) | Double Gopal | Full Episode",
+  //     duration: "01:50",
+  //   },
+  //   {
+  //     videoId: "slv1t4SSc9k",
+  //     title:
+  //       "গোপাল বিরক্ত হয় | Fun Time with Gopal | Gopal Bhar | Full Episode",
+  //     duration: "01:50",
+  //   },
+  //   {
+  //     videoId: "pA8eM-L9Z6Q",
+  //     title: "দোষ-এর ভর | Gopal Bhar | Episode - 978",
+  //     duration: "01:50",
+  //   },
+  //   {
+  //     videoId: "slv1t4SSc9k",
+  //     title:
+  //       "গোপাল বিরক্ত হয় | Fun Time with Gopal | Gopal Bhar | Full Episode",
+  //     duration: "01:50",
+  //   },
+  //   {
+  //     videoId: "pA8eM-L9Z6Q",
+  //     title: "দোষ-এর ভর | Gopal Bhar | Episode - 978",
+  //     duration: "01:50",
+  //   },
+  //   {
+  //     videoId: "slv1t4SSc9k",
+  //     title:
+  //       "গোপাল বিরক্ত হয় | Fun Time with Gopal | Gopal Bhar | Full Episode",
+  //     duration: "01:50",
+  //   },
+  //   {
+  //     videoId: "pA8eM-L9Z6Q",
+  //     title: "দোষ-এর ভর | Gopal Bhar | Episode - 978",
+  //     duration: "01:50",
+  //   },
+  // ];
+  //

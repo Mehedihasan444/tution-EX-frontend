@@ -1,5 +1,4 @@
-import { FaFacebook, FaGithub } from "react-icons/fa";
-import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaFacebook } from "react-icons/fa";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
@@ -12,20 +11,21 @@ const Social_login = () => {
   const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
 
+  // google login function
   const handle_google_login = () => {
     signIn_Google()
       .then((result) => {
-       
         const userInfo = {
           name: result.user.displayName,
           email: result.user.email,
           image: result.user.photoURL,
           role: "user",
-          phone:'+8801xxxxxxxxx',
-          no_orders:0,
+          phone: "+8801xxxxxxxxx",
+          no_of_purchases: 0,
+          purchaseList:[],
           total_spend: 0,
-          password:'',
-          address:''
+   
+          address: "",
         };
         axiosPublic.post("/users", userInfo).then((res) => {
           console.log(res.data);

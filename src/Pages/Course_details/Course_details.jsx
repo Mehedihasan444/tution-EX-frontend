@@ -1,66 +1,68 @@
 import { useParams } from "react-router-dom";
-import YouTube from "react-youtube";
 import Youtube_video_controler from "../../Utilities/Youtube_video_controler/Youtube_video_controler";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LuBadgeCheck } from "react-icons/lu";
 import Students_Feedback from "../../Components/Students_Feedback/Students_Feedback";
 import Newsletter from "../../Components/Newsletter/Newsletter";
+import { FaCartPlus } from "react-icons/fa";
+import { SiTicktick } from "react-icons/si";
+import ResponsiveYouTube from "../../Utilities/ResponsiveYouTube/ResponsiveYouTube";
+import useAuth from "../../Hooks/useAuth";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import { DataContext } from "../../DataProvider/DataProvider";
 
 const Course_details = () => {
   const { id } = useParams();
+  const { user } = useAuth();
+  const { allData,dataFetch } = useContext(DataContext);
+  const [course, setCourse] = useState({});
   const [yt_video, setYt_video] = useState("aNJ21b_ZQF0");
-  const playlist = [
-    {
-      videoId: "ED2JZahFo6w",
-      title: "শোলমাছের ঝাল | Double Gopal | Full Episode",
-      duration: "43:50",
-    },
-    {
-      videoId: "A3mz0swGakw",
-      title:
-        "মন্ত্রীর দিতিয় বিয়ে | Gopal Bhar ( Bengali ) | Double Gopal | Full Episode",
-      duration: "45:15",
-    },
-    {
-      videoId: "iJWqAzdfUJY",
-      title:
-        "বোকা ডাকাত | Gopal Bhar ( Bengali ) | Double Gopal | Full Episode",
-      duration: "01:50",
-    },
-    {
-      videoId: "slv1t4SSc9k",
-      title:
-        "গোপাল বিরক্ত হয় | Fun Time with Gopal | Gopal Bhar | Full Episode",
-      duration: "01:50",
-    },
-    {
-      videoId: "pA8eM-L9Z6Q",
-      title: "দোষ-এর ভর | Gopal Bhar | Episode - 978",
-      duration: "01:50",
-    },
-    {
-      videoId: "slv1t4SSc9k",
-      title:
-        "গোপাল বিরক্ত হয় | Fun Time with Gopal | Gopal Bhar | Full Episode",
-      duration: "01:50",
-    },
-    {
-      videoId: "pA8eM-L9Z6Q",
-      title: "দোষ-এর ভর | Gopal Bhar | Episode - 978",
-      duration: "01:50",
-    },
-    {
-      videoId: "slv1t4SSc9k",
-      title:
-        "গোপাল বিরক্ত হয় | Fun Time with Gopal | Gopal Bhar | Full Episode",
-      duration: "01:50",
-    },
-    {
-      videoId: "pA8eM-L9Z6Q",
-      title: "দোষ-এর ভর | Gopal Bhar | Episode - 978",
-      duration: "01:50",
-    },
-  ];
+  const axiosPublic = useAxiosPublic();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    axiosPublic.get(`/users/courses/${id}`).then((res) => {
+      setCourse(res.data);
+      setYt_video(course?.intro?.videoId);
+    });
+  }, [axiosPublic, id, course?.intro?.videoId]);
+
+  // check user profile is purchased this course or not
+  const isCoursePurchasedAndPaid = (specificCourseId) => {
+    // Find the specific course in the purchaseList array
+    const specificCourse = allData[2]?.purchaseList?.find(
+      (course) => course.course_id === specificCourseId
+    );
+
+    // Check if the specific course is found and both purchase and payment are true
+    return specificCourse && specificCourse.purchase && specificCourse.payment;
+  };
+
+  const isPurchasedAndPaid = isCoursePurchasedAndPaid(id);
+
+  // add to cart function
+  const handleCart = async () => {
+    if (user) {
+      const {_id, ...rest} = course;
+      const res = await axiosPublic.post(`/cart`, {
+        ...rest, // Spread the rest of the properties
+        course_id: course?._id, // Include the course_id separately
+        email: user?.email,
+      });
+      
+      if (res.data.insertedId) {
+        console.log(res.data);
+        toast.success(`${course?.title} has been added to the cart.`);
+        dataFetch()
+      } else if (res.data.message) {
+        toast.error(`${course?.title} ${res.data.message} in the cart`);
+      }
+    } else {
+      navigate("/system-access/signIn");
+    }
+  };
 
   return (
     <>
@@ -85,20 +87,21 @@ const Course_details = () => {
 
       {/*-------  */}
 
-      <div className="h-screen flex justify-between gap-10 items-center">
-        <div className="">
-          <Youtube_video_controler vId={yt_video} />
-        </div>
-        
+      {isPurchasedAndPaid ? (
+        <div className="h-screen flex justify-between gap-10 items-center">
+          <div className="">
+            <Youtube_video_controler vId={yt_video} />
+          </div>
+
           <div className="">
             <h1 className="text-left text-4xl font-bold">Course Playlists</h1>
             <div className="h-[75vh] overflow-y-auto p-5 bg-slate-100 mt-5 rounded-xl">
               <div className="space-y-5 flex flex-col justify-center items-start    ">
-                {playlist?.map((vid) => {
+                {course?.playlist?.map((vid, idx) => {
                   return (
                     <div
                       className="flex justify-center items-center gap-5 bg-white p-2 cursor-pointer rounded-md"
-                      key={vid?.videoId}
+                      key={idx}
                       onClick={() => setYt_video(vid?.videoId)}
                     >
                       <div className="w-20 h-20">
@@ -118,9 +121,70 @@ const Course_details = () => {
               </div>
             </div>
           </div>
-      
-      </div>
-      {/*  ------------*/}
+        </div>
+      ) : (
+        <div className="mx-5 grid grid-cols-2 lg:grid-cols-3 justify-between items-center gap-5 my-20 border rounded-xl p-5">
+          <div className="col-span-2 flex justify-center items-center">
+            {/* <YouTube videoId={'aNJ21b_ZQF0'} /> */}
+            <ResponsiveYouTube videoId={course?.intro?.videoId} />
+          </div>
+          <div className="col-span-2 lg:col-span-1 flex justify-center items-center">
+            <div className="space-y-5 border p-5 rounded-lg">
+              <h1 className="text-3xl font-bold ">{course?.title}</h1>
+              <hr />
+              <div className="flex justify-between items-center">
+                <h3 className="">Regular Price</h3>
+                <span className="text-3xl font-bold text-purple-600">
+                  $ {course?.price}
+                </span>
+              </div>
+              <hr />
+              <div className="">
+                <ul className=" ml-7 space-y-2 mt-5">
+                  <li className="flex items-center gap-4">
+                    <span className="bg-[#F7F5FA]">
+                      <SiTicktick className="text-[#FF897A]" />
+                    </span>
+                    Lorem ipsum dolor sit amet consectetur.
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <span className="bg-[#F7F5FA]">
+                      <SiTicktick className="text-[#FF897A]" />
+                    </span>
+                    dorem ipsum dolor sit amet .
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <span className="bg-[#F7F5FA]">
+                      <SiTicktick className="text-[#FF897A]" />
+                    </span>
+                    ipsum dolor sit amet.
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <span className="bg-[#F7F5FA]">
+                      <SiTicktick className="text-[#FF897A]" />
+                    </span>
+                    Lorem ipsum sit amet consectetur.
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <span className="bg-[#F7F5FA]">
+                      <SiTicktick className="text-[#FF897A]" />
+                    </span>
+                    dolorLorem ipsum sit amet consectetur.
+                  </li>
+                </ul>
+              </div>
+              <button
+                onClick={() => handleCart()}
+                className="btn w-full  text-white mt-3 bg-purple-500 text-xl"
+              >
+                <FaCartPlus className="text-2xl" /> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/*  --------------*/}
       <div className="space-y-5 mb-10">
         <h1 className="text-4xl font-semibold">Course Details</h1>
         <p className="text-slate-400 text-justify">
@@ -204,7 +268,7 @@ const Course_details = () => {
       <Students_Feedback />
       {/* ----------- */}
 
-      <Newsletter/>
+      <Newsletter />
     </>
   );
 };

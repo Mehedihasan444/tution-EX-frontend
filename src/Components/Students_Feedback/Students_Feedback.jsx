@@ -14,49 +14,61 @@ import Feedback_Card from "../Cards/Feedback_Card";
 
 const Students_Feedback = () => {
   return (
-    <div className="relative my-20">
-      <div className="absolute z-50">
-        <h1 className="text-5xl font-bold">Feedback From Students</h1>
+    <div className="relative my-20 py-10">
+      <div className="absolute z-50 top-0 w-full">
+        <h1 className=" text-center sm:text-left text-3xl sm:text-5xl font-bold">Feedback From Students</h1>
       </div>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={40}
         navigation={true}
         modules={[Pagination, Navigation]}
+        breakpoints={{
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+        }}
         className="mySwiper "
       >
         <SwiperSlide>
-          <div className="">
+          <div className="px-5">
             <Feedback_Card />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="">
+          <div className="px-5">
             <Feedback_Card />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="">
+          <div className="px-5">
             <Feedback_Card />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="">
+          <div className="px-5">
             <Feedback_Card />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="">
+          <div className="px-5">
             <Feedback_Card />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="">
+          <div className="px-5">
             <Feedback_Card />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="">
+          <div className="px-5">
             <Feedback_Card />
           </div>
         </SwiperSlide>

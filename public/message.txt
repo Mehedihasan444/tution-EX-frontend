@@ -1,0 +1,228 @@
+[
+
+    {
+        "_id":1,
+        "title":"Web Development with PHP & Laravel",
+        "description":"",
+        "price":0,
+        "discount":0,
+        "image":"",
+        "category":"Development",
+        "sub_category":"Web Development",
+        "avg_rating": 4.2,
+        "no_rating":36,
+        "no_enrollment":20,
+        "no_lesson":10,
+        "starting_date":"06-06-2024",
+        "intro":{
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+          },
+        
+        "playlist":[{
+            "videoId": "Rek0NWPCNOc",
+            "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+            "duration": "37:54"
+          },
+          {
+            "videoId": "2QR11oDukn4",
+            "title":"HTML Course | World's most premium HTML Course | Lecture 2",
+            "duration": "32:15"
+          },
+          {
+            "videoId": "jRAZlTEZi9I",
+            "title":"HTML Course | Media Elements | Lecture 3",
+            "duration": "26:01"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          }
+          ],
+        "author":{
+            "author_id":1,
+            "author_name":"abcd",
+            "author_email":"abcd@gmail.com",
+            "author_phone":"017XXXXXXXX",
+            "author_img":"https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        }
+      
+    },
+    {
+        "_id":2,
+        "title":"Learn Figma - UI/UX Desgin Essential Traning",
+        "description":"",
+        "price":0,
+        "discount":0,
+        "image":"",
+        "category":"Design",
+        "sub_category":"Graphics Design",
+        "avg_rating": 4.2,
+        "no_rating":6,
+        "no_enrollment":2,
+        "no_lesson":101,
+        "starting_date":"02-06-2024",
+        "intro":{
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+          },
+        
+        "playlist":[{
+            "videoId": "Rek0NWPCNOc",
+            "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+            "duration": "37:54"
+          },
+          {
+            "videoId": "2QR11oDukn4",
+            "title":"HTML Course | World's most premium HTML Course | Lecture 2",
+            "duration": "32:15"
+          },
+          {
+            "videoId": "jRAZlTEZi9I",
+            "title":"HTML Course | Media Elements | Lecture 3",
+            "duration": "26:01"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          }
+          ],
+        "author":{
+            "author_id":2,
+            "author_name":"efgh",
+            "author_email":"efgh@gmail.com",
+            "author_phone":"017XXXXXXXX",
+            "author_img":"https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        }
+      
+    },
+    {
+        "_id":3,
+        "title":"Wild life Photography with XYZ",
+        "description":"",
+        "price":0,
+        "discount":0,
+        "image":"",
+        "category":"Photography",
+        "sub_category":"Wild life Photography",
+        "avg_rating": 4.2,
+        "no_rating":36,
+        "no_enrollment":20,
+        "no_lesson":10,
+        "starting_date":"06-06-2024",
+        "intro":{
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+          },
+        
+        "playlist":[{
+            "videoId": "Rek0NWPCNOc",
+            "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+            "duration": "37:54"
+          },
+          {
+            "videoId": "2QR11oDukn4",
+            "title":"HTML Course | World's most premium HTML Course | Lecture 2",
+            "duration": "32:15"
+          },
+          {
+            "videoId": "jRAZlTEZi9I",
+            "title":"HTML Course | Media Elements | Lecture 3",
+            "duration": "26:01"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          },
+          {
+            "videoId": "61ppyY5rUB0",
+            "title":"HTML | Structuring a Mega Project",
+            "duration": "32:50"
+          },
+          {
+            "videoId": "sqJ6xZ9mUwE",
+            "title": "CSS - What is selectors? | Web Development Course",
+            "duration": "25:50"
+          }
+          ],
+        "author":{
+            "author_id":3,
+            "author_name":"ijkl",
+            "author_email":"ijkl@gmail.com",
+            "author_phone":"017XXXXXXXX",
+            "author_img":"https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        }
+      
+    }
+]

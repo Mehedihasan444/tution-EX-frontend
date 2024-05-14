@@ -1,13 +1,24 @@
 import { useContext } from "react";
-import { AuthContext } from "../../AuthProvider/AuthProvider";
+
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import useAxiosPublic from "../../Hooks/useAxiosPublic";
+
 import { useNavigate } from "react-router-dom";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+
+// a static image for who did not set he/her image
 const photo =
   "https://www.libarts.colostate.edu/wp-content/uploads/2018/02/userphoto.png";
+
 const Register = () => {
-  const { create_user_with_email, update_profile, sendEmailVerification, user, loading } = useContext(AuthContext);
+  const {
+    create_user_with_email,
+    update_profile,
+    sendEmailVerification,
+    user,
+    loading,
+  } = useContext(AuthContext);
   const { register, handleSubmit } = useForm();
   const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
@@ -15,14 +26,27 @@ const Register = () => {
   const onSubmit = (data) => {
     console.log(data);
     // checking if the password contain atleast one leter, one number and has 8 charecter (Regex)
-    if (/"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/.test(data?.password)){
+    if (/"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/.test(data?.password)) {
       create_user_with_email(data?.email, data?.password)
         .then((res) => {
           console.log("after mail verification", res);
           // updating user profile
-          update_profile(data?.name, photo)
-            .then(() => {
-              axiosPublic.post("/users", { ...data, image: photo, phone: '+8801xxxxxxxxx', no_orders: 0, total_spend: 0, role: 'user',address:'' }).then((res) => {
+          update_profile(data?.name, photo).then(() => {
+            // remove password property from data object
+            const { password, ...rest } = data;
+            // post user info to database
+            axiosPublic
+              .post("/users", {
+                ...rest,
+                image: photo,
+                phone: "+8801xxxxxxxxx",
+                no_of_purchases: 0,
+                purchaseList:[],
+                total_spend: 0,
+                role: "user",
+                address: "",
+              })
+              .then((res) => {
                 console.log(res.data);
                 if (res.data.insertedId) {
                   toast.success("Registration Complete!!!");
@@ -31,28 +55,28 @@ const Register = () => {
                   toast.error(`${res.data.message}`);
                 }
               });
-            });
+          });
           // sending verification link
           if (!loading) {
             sendEmailVerification(user)
               .then(() => {
-                toast.success('Email verification link send');
-                navigate('/')
+                toast.success("Email verification link send");
+                navigate("/");
               })
               .catch((error) => {
                 toast.success(`${error}`);
               });
           } else return <h1 className="text-4lx font-semibold">loading...</h1>;
-
         })
         .catch((err) => {
           console.log(err);
           toast.error(`Error : ${err.code}`);
         });
-
-    }else{
+    } else {
       // showing toast error if the password is not strong enough
-      toast.error("password: minimum eight characters, at least one letter and one number")
+      toast.error(
+        "password: minimum eight characters, at least one letter and one number"
+      );
     }
   };
 
