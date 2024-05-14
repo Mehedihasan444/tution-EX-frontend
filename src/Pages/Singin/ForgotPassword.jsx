@@ -4,14 +4,14 @@ import { useContext } from "react";
 import { toast } from "react-toastify";
 
 const ForgotPassword=()=>{
-    const { update_password } = useContext(AuthContext);
+    const { resetUserPassword } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleSubmit = async(e)=>{
         e.preventDefault()
         const emalVal = e.target.email.value;
         console.log(emalVal);
-        const result=update_password(emalVal)
+        const result=resetUserPassword(emalVal)
         if(result?.message===true){
             console.log(result);
             toast.success('password updated!!!');

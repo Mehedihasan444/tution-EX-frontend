@@ -11,7 +11,7 @@ const DataProvider = ({ children }) => {
   const { user } = useAuth();
   const axiosPublic = useAxiosPublic();
   const axiosSecure = useAxiosSecure();
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState("");
 
   // Here fetch all data centrally
   const { data: allData = [], refetch } = useQuery({
@@ -22,11 +22,9 @@ const DataProvider = ({ children }) => {
         const res2 = await axiosPublic.get(`/cart/${user?.email}`);
         const res3 = await axiosSecure.get(`/users/${user?.email}`);
         const res4 = await axiosPublic.get(`/courses/${user?.email}`);
-        const res5 = await axiosPublic.get(`/all-software/${user?.email}`);
-        const res6 = await axiosPublic.get("/admin/users");
-        const res7 = await axiosPublic.get(`/all-softwares`);
-        
-        return [res1.data, res2.data, res3.data, res4.data, res5.data, res6.data,res7.data];
+        const res5 = await axiosPublic.get("/admin/users");
+
+        return [res1.data, res2.data, res3.data, res4.data, res5.data];
       } catch (error) {
         // Handle errors here
         console.error("Error fetching data:", error);
@@ -35,17 +33,12 @@ const DataProvider = ({ children }) => {
     },
   });
 
-  
-
   // Here fetch all data centrally by id
   const byId = async (id) => {
     try {
       const course = await axiosPublic.get(`/courses/${id}`);
-      // const software = await axiosSecure.get(`/all-softwares/${id}`);
-      return [
-        course.data,
-        // , software.data
-      ];
+
+      return [course.data];
     } catch (error) {
       // Handle errors here
       console.error("Error fetching data by id:", error);
@@ -77,9 +70,6 @@ export default DataProvider;
 DataProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-
-
 
 // import { createContext } from "react";
 // import { useQuery } from "@tanstack/react-query";

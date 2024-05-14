@@ -7,13 +7,13 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Social_login = () => {
-  const { signIn_Google } = useContext(AuthContext);
+  const { signInWithGoogle } = useContext(AuthContext);
   const axiosPublic = useAxiosPublic();
   const navigate = useNavigate();
 
   // google login function
   const handle_google_login = () => {
-    signIn_Google()
+    signInWithGoogle()
       .then((result) => {
         const userInfo = {
           name: result.user.displayName,

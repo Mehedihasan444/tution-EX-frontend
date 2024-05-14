@@ -80,7 +80,7 @@ const AuthProvider = ({ children }) => {
   };
 
   // sign Out
-  const logout = async () => {
+  const logOut = async () => {
     setLoading(true);
     try {
       await signOut(auth);
@@ -110,7 +110,7 @@ const AuthProvider = ({ children }) => {
     updateProfileInfo,
     createUserWithEmail,
     signInWithEmail,
-    logout,
+    logOut,
     user,
     loading,
     resetUserPassword,
