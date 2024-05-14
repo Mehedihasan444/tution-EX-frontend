@@ -53,7 +53,7 @@ const Users = () => {
       <h1 className="text-4xl font-bold ">Manage all users</h1>
       <div className="flex justify-around ">
         <h1 className="text-xl font-semibold mt-5">
-          Total Users: {allData[5]?.length}
+          Total Users: {allData[4]?.length}
         </h1>
       </div>
       {/* table */}
@@ -75,7 +75,7 @@ const Users = () => {
             </tr>
           </thead>
           <tbody>
-            {allData[5]?.map((item, i) => (
+            {allData[4]?.map((item, i) => (
               <tr key={item._id}>
                 <td>{i + 1}</td>
                 <td> {item?.name} </td>

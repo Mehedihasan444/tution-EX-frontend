@@ -13,9 +13,9 @@ const photo =
 
 const Register = () => {
   const {
-    create_user_with_email,
-    update_profile,
-    sendEmailVerification,
+    createUserWithEmail,
+    updateProfileInfo,
+    sendVerificationEmail,
     user,
     loading,
   } = useContext(AuthContext);
@@ -27,11 +27,11 @@ const Register = () => {
     console.log(data);
     // checking if the password contain atleast one leter, one number and has 8 charecter (Regex)
     if (/"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/.test(data?.password)) {
-      create_user_with_email(data?.email, data?.password)
+      createUserWithEmail(data?.email, data?.password)
         .then((res) => {
           console.log("after mail verification", res);
           // updating user profile
-          update_profile(data?.name, photo).then(() => {
+          updateProfileInfo(data?.name, photo).then(() => {
             // remove password property from data object
             const { password, ...rest } = data;
             // post user info to database
@@ -58,7 +58,7 @@ const Register = () => {
           });
           // sending verification link
           if (!loading) {
-            sendEmailVerification(user)
+            sendVerificationEmail(user)
               .then(() => {
                 toast.success("Email verification link send");
                 navigate("/");
