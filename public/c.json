@@ -1,0 +1,310 @@
+[
+    {
+        "title": "Web Development with PHP & Laravel",
+        "description": "",
+        "price": {
+            "$numberInt": "40"
+        },
+        "discount": {
+            "$numberInt": "0"
+        },
+        "image": "https://i.ibb.co/kMmXbbh/web-Course.jpg",
+        "category": "Development",
+        "sub_category": "Web Development",
+        "avg_rating": {
+            "$numberDouble": "4.2"
+        },
+        "no_rating": {
+            "$numberInt": "36"
+        },
+        "no_enrollment": {
+            "$numberInt": "20"
+        },
+        "no_lesson": {
+            "$numberInt": "10"
+        },
+        "starting_date": "06-06-2024",
+        "intro": {
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+        },
+        "playlist": [
+            {
+                "videoId": "Rek0NWPCNOc",
+                "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+                "duration": "37:54"
+            },
+            {
+                "videoId": "2QR11oDukn4",
+                "title": "HTML Course | World's most premium HTML Course | Lecture 2",
+                "duration": "32:15"
+            },
+            {
+                "videoId": "jRAZlTEZi9I",
+                "title": "HTML Course | Media Elements | Lecture 3",
+                "duration": "26:01"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            }
+        ],
+        "author": {
+            "author_id": {
+                "$numberInt": "1"
+            },
+            "author_name": "abcd",
+            "author_email": "abcd@gmail.com",
+            "author_phone": "017XXXXXXXX",
+            "author_img": "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        },
+        "productCategory": "course"
+    },
+    {
+        "title": "UI/UX Desgin Advance",
+        "description": "",
+        "price": {
+            "$numberInt": "22"
+        },
+        "discount": {
+            "$numberInt": "0"
+        },
+        "image": "https://i.ibb.co/tPStwhh/UIUX-Desgin.jpg",
+        "category": "Design",
+        "sub_category": "Graphics Design",
+        "avg_rating": {
+            "$numberDouble": "4.2"
+        },
+        "no_rating": {
+            "$numberInt": "6"
+        },
+        "no_enrollment": {
+            "$numberInt": "2"
+        },
+        "no_lesson": {
+            "$numberInt": "101"
+        },
+        "starting_date": "02-06-2024",
+        "intro": {
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+        },
+        "playlist": [
+            {
+                "videoId": "Rek0NWPCNOc",
+                "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+                "duration": "37:54"
+            },
+            {
+                "videoId": "2QR11oDukn4",
+                "title": "HTML Course | World's most premium HTML Course | Lecture 2",
+                "duration": "32:15"
+            },
+            {
+                "videoId": "jRAZlTEZi9I",
+                "title": "HTML Course | Media Elements | Lecture 3",
+                "duration": "26:01"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            }
+        ],
+        "author": {
+            "author_id": {
+                "$numberInt": "2"
+            },
+            "author_name": "efgh",
+            "author_email": "efgh@gmail.com",
+            "author_phone": "017XXXXXXXX",
+            "author_img": "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        },
+        "productCategory": "course"
+    },
+    {
+        "title": "ABC of Data Science",
+        "description": "",
+        "price": {
+            "$numberInt": "30"
+        },
+        "discount": {
+            "$numberInt": "0"
+        },
+        "image": "https://i.ibb.co/Ksw18qv/data-Science.jpg",
+        "category": "Photography",
+        "sub_category": "Wild life Photography",
+        "avg_rating": {
+            "$numberDouble": "4.2"
+        },
+        "no_rating": {
+            "$numberInt": "36"
+        },
+        "no_enrollment": {
+            "$numberInt": "20"
+        },
+        "no_lesson": {
+            "$numberInt": "10"
+        },
+        "starting_date": "06-06-2024",
+        "intro": {
+            "videoId": "l1EssrLxt7E",
+            "title": "Introduction to Web Development | World's most premium Web Development Course | Lecture 0 (Reupload)",
+            "duration": "11:07"
+        },
+        "playlist": [
+            {
+                "videoId": "Rek0NWPCNOc",
+                "title": "HTML Course | From Beginners to Advance Level | Lecture 1",
+                "duration": "37:54"
+            },
+            {
+                "videoId": "2QR11oDukn4",
+                "title": "HTML Course | World's most premium HTML Course | Lecture 2",
+                "duration": "32:15"
+            },
+            {
+                "videoId": "jRAZlTEZi9I",
+                "title": "HTML Course | Media Elements | Lecture 3",
+                "duration": "26:01"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            },
+            {
+                "videoId": "61ppyY5rUB0",
+                "title": "HTML | Structuring a Mega Project",
+                "duration": "32:50"
+            },
+            {
+                "videoId": "sqJ6xZ9mUwE",
+                "title": "CSS - What is selectors? | Web Development Course",
+                "duration": "25:50"
+            }
+        ],
+        "author": {
+            "author_id": {
+                "$numberInt": "3"
+            },
+            "author_name": "ijkl",
+            "author_email": "ijkl@gmail.com",
+            "author_phone": "017XXXXXXXX",
+            "author_img": "https://assets.mycast.io/actor_images/actor-tyson-beckford-135047_large.jpg?1602700938"
+        },
+        "productCategory": "course"
+    },
+    {
+        "intro": {
+            "videoId": "T3l51Psce3c",
+            "title": "Business Finance in Business Management",
+            "duration": "2:50"
+        },
+        "playlist": [
+            {
+                "videoId": "gGE4GUv1-F0",
+                "title": "6 Steps to Write Business Management Strategy for Your Own Business",
+                "duration": "2:31"
+            }
+        ],
+        "title": "Data Analytics",
+        "sub_category": "Business",
+        "description": "How profitable is South African industry? Our brief report The Profitability of South African Industry by Sector 2014 to 2021 presents graphically the return on equity of companies by major sectors in the economy based on data published by StatsSA in its publication Annual Financial Statistics (Statistical Release P0021) issued in December 2022. \n\nIf you would like more detailed data by industry, further financial analysis on companies’ profitability or want to benchmark your company’s performance against the data and other company information, please contact Rebecca Holland at rebecca@businessmetrics.co.za",
+        "price": "31",
+        "category": "Business",
+        "starting_date": "2024-05-13",
+        "image": "https://i.ibb.co/hcZMS4Q/data.jpg",
+        "discount": {
+            "$numberInt": "0"
+        },
+        "avg_rating": {
+            "$numberInt": "0"
+        },
+        "no_rating": {
+            "$numberInt": "0"
+        },
+        "no_enrollment": {
+            "$numberInt": "0"
+        },
+        "no_lesson": {
+            "$numberInt": "0"
+        },
+        "author": {
+            "author_id": "37734ce7-dedd-4045-bba2-72a5ea5a93fc",
+            "author_name": "Squad",
+            "author_email": "squad.aaam@gmail.com",
+            "author_phone": "017xxxxxxxx",
+            "author_img": "https://lh3.googleusercontent.com/a/ACg8ocL1MReT_PYeyGZc2YSziGdeVR5iHBDN2UiNAXllO_0xdX0yWA=s96-c"
+        },
+        "productCategory": "course"
+    }
+]
