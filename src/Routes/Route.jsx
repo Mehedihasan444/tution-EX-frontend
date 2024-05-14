@@ -6,8 +6,7 @@ import SignIn from "../Pages/Singin/SignIn";
 import System_Access from "../Pages/System_Access/System_Access";
 import ForgotPassword from "../Pages/Singin/ForgotPassword";
 import Course_details from "../Pages/Course_details/Course_details";
-import Software from "../Pages/Software/Software";
-import SoftwareDetails from "../Pages/Software/SoftwareDetails";
+
 import Dashboard from "../Layout/Dashboard";
 import PaymentSuccess from "../Pages/PaymentSuccess/PaymentSuccess";
 import PaymentFailed from "../Pages/PaymentFailed/PaymentFailed";
@@ -17,17 +16,14 @@ import Users from "../Pages/Users/Users";
 import Admin_Home from "../Pages/Admin_Home/Admin_Home";
 import About_Us from "../Pages/About_Us/About_Us";
 import Add_a_Course from "../Pages/Add_a_Course/Add_a_Course";
-import AddSoftwares from "../Pages/Add_Software/AddSoftwares";
 import DisscusionForum from "../Pages/Discussion_forum/DisscusionForum";
 import Shop from "../Pages/Shop/Shop";
 import My_courses from "../Pages/My_courses/My_courses";
-import My_software from "../dashboard/user/My_software";
 import DisscusionForumDetails from "../Pages/Discussion_forum/DisscusionForumDetails";
 import PrivateRoute from "./PrivateRoute";
 import AdminRoute from "./AdminRoute";
 import My_enrolled_courses from "../Pages/My_enrolled_courses/My_enrolled_courses";
 import Purchase_History from "../dashboard/user/Purchase_History";
-import All_softwares from "../dashboard/admin/All_softwares";
 import All_courses from "../dashboard/admin/All_courses";
 
 const Route = createBrowserRouter([
@@ -43,14 +39,7 @@ const Route = createBrowserRouter([
         path: "/course-details/:id",
         element: <Course_details />,
       },
-      {
-        path: "/software/:categories",
-        element: <Software />,
-      },
-      {
-        path: "/software/:categories/:id",
-        element: <SoftwareDetails />,
-      },
+      
       {
         path: "/about-us",
         element: <About_Us />,
@@ -136,16 +125,7 @@ const Route = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "/dashboard/admin/all_softwares",
-        element: (
-          <PrivateRoute>
-            <AdminRoute>
-              <All_softwares />
-            </AdminRoute>
-          </PrivateRoute>
-        ),
-      },
+      
       // common routes
       {
         path: "/dashboard/admin/add_a_course",
@@ -156,15 +136,7 @@ const Route = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "/dashboard/admin/add_a_software",
-        element: (
-          <PrivateRoute>
-            {" "}
-            <AddSoftwares />{" "}
-          </PrivateRoute>
-        ),
-      },
+      
       // user routes
 
       {
@@ -204,15 +176,7 @@ const Route = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "/dashboard/my_software",
-        element: (
-          <PrivateRoute>
-            {" "}
-            <My_software />
-          </PrivateRoute>
-        ),
-      },
+      
 
       {
         path: "/dashboard/user/purchase_history",
