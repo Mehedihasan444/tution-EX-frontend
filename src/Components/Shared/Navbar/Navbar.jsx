@@ -7,23 +7,23 @@ import useAdmin from "../../../Hooks/useAdmin";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  // const { allData, setSearchValue } = useContext(DataContext);
+  const { allData, setSearchValue } = useContext(DataContext);
   const [isAdmin] = useAdmin();
   const navigate = useNavigate();
   const closeButtonRef = useRef(null);
   const [cartCount, setCartCount] = useState(0);
   const [cart, setCart] = useState([]);
 
-  // useEffect(() => {
-  //   setCart(allData[1]);
-  //   setCartCount(allData[1]?.length);
-  // }, [allData]);
+  useEffect(() => {
+    setCart(allData[1]);
+    setCartCount(allData[1]?.length);
+  }, [allData]);
 
   // handleSubmit
   const handleSubmit = async (e) => {
     e.preventDefault();
     const searchValue = e.target.search.value;
-    // setSearchValue(searchValue)
+    setSearchValue(searchValue)
     closeButtonRef.current.click();
     navigate("/shop");
   };
