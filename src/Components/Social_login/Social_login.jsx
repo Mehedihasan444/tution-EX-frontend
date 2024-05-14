@@ -22,9 +22,9 @@ const Social_login = () => {
           role: "user",
           phone: "+8801xxxxxxxxx",
           no_of_purchases: 0,
-          purchaseList:[],
+          purchaseList: [],
           total_spend: 0,
-   
+
           address: "",
         };
         axiosPublic.post("/users", userInfo).then((res) => {
