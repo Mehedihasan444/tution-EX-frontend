@@ -30,7 +30,7 @@ const About_Us = () => {
               </div>
               <div className="">
                 <h1 className="text-6xl font-extrabold">
-                  <Count_Up value={7} />
+                  <Count_Up value={1} />
                 </h1>
                 <p className="">Great Courses</p>
               </div>
@@ -51,7 +51,7 @@ const About_Us = () => {
           </p>
         </div>
         <div className="space-y-3 border p-4 mb-5">
-          <h1 className="text-3xl font-semibold">Our History</h1>
+          <h1 className="text-3xl font-semibold">Our Journey</h1>
           <p className="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             pretium mollis ex, vel interdum augue faucibus sit amet. Proin
@@ -75,10 +75,10 @@ const About_Us = () => {
         <h1 className="text-4xl font-bold mb-2 text-center md:text-left">Our Team</h1>
         <div className="flex justify-center md:justify-start items-center my-2 "><hr className="w-[50px] border-2 border-[#00BFA5]" /></div>
         <div className="grid grid-cols-1 md:grid-cols-4 justify-center items-center gap-5 my-10">
-          <Team_Member_Card />
-          <Team_Member_Card />
-          <Team_Member_Card />
-          <Team_Member_Card />
+          <Team_Member_Card img={'https://i.ibb.co/kDxSpZr/New-01.webp'} />
+          <Team_Member_Card img={'https://i.ibb.co/FVPCXJT/New-2.webp'} />
+          <Team_Member_Card img={'https://i.ibb.co/RTL2pny/New-3.webp'} />
+          <Team_Member_Card img={'https://i.ibb.co/h9nYq4W/New-4.webp'} />
         </div>
       </div>
 
@@ -91,7 +91,7 @@ const About_Us = () => {
           <p className="text-black px-5 md:px-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium mollis ex, vel interdum augue faucibus sit amet. Proin tempor purus ac suscipit sagittis. Nunc finibus euismod enim, eu finibus nunc ullamcorper et.</p>
         </div>
         <div className="flex-1 mx-5">
-          <img src="https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2024/01/about-2.jpg" alt="" className="rounded-md" />
+          <img src="https://i.ibb.co/1s8q4nS/pexels-fauxels-3184291.jpg" alt="" className="rounded-md" />
         </div>
       </div>
 

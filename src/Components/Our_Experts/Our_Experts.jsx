@@ -3,23 +3,23 @@ import Team_Member_Card from "../Cards/Team_Member_Card";
 const Our_Experts = () => {
   const data = [
     {
-      name: "Mario Fleming",
-      img: "https://cdn.mos.cms.futurecdn.net/UAStwz3iBUsYghdn9cT9bW.jpeg",
+      name: "Jonathan Kimble",
+      img: "https://i.ibb.co/kDxSpZr/New-01.webp",
       position: "Instructor",
     },
     {
-      name: "Kimberly walker",
-      img: "https://ecomall-be87.kxcdn.com/ecomall/wp-content/uploads/2021/04/team-1.jpg",
+      name: "Unkel Roger",
+      img: "https://i.ibb.co/FVPCXJT/New-2.webp",
       position: "Instructor",
     },
     {
-      name: "Gilberto walker",
-      img: "https://images.squarespace-cdn.com/content/v1/590cc57ebe659408c68d77fd/1539204722132-3G1X2T8BL4WXUFE5X533/Lyndsey+Scott.png",
+      name: "Megnas Nakamura",
+      img: "https://i.ibb.co/RTL2pny/New-3.webp",
       position: "Instructor",
     },
     {
-      name: "Rhodes",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnHkAba8WfqfKMg6-SBbhr9rq6kyy9DFK554ndkZmRLQ&s",
+      name: "Rhodes Helgot",
+      img: "https://i.ibb.co/h9nYq4W/New-4.webp",
       position: "Instructor",
     },
   ];

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 const DisscusionForum = () => {
   const { user } = useAuth();
   const [all_discussion, setDiscussion] = useState();
+  const [refetch, setrefetch] = useState(0);
   const axiosPublic = useAxiosPublic();
   const handelClick = async (e) => {
     e.preventDefault();
@@ -18,7 +19,8 @@ const DisscusionForum = () => {
       author: user?.displayName,
     });
     if (productInfo?.data?.insertedId) {
-      toast.success("Course Successfully added!!!");
+      setrefetch(refetch+1);
+      toast.success("Forum Successfully added!!!");
     } else {
       toast.error("Something went wrong");
     }
@@ -27,7 +29,7 @@ const DisscusionForum = () => {
     axiosPublic.get("/discussion").then((res) => {
       setDiscussion(res.data);
     });
-  }, [axiosPublic]);
+  }, [axiosPublic,refetch]);
 
   return (
     <section>
