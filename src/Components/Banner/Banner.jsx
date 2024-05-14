@@ -14,10 +14,16 @@ const Banner = () => {
             specialises in accredited.
           </p>
           <div className="flex gap-5 justify-start">
+            <a href="/shop">
             <button className="btn bg-[#AD6CF5] font-bold text-white border-none">
               Get Started
             </button>
+
+            </a>
+            <a href="/shop">
+
             <button className="btn">Browse Courses</button>
+            </a>
           </div>
         </div>
       </div>

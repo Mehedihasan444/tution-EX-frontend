@@ -96,7 +96,7 @@ const Navbar = () => {
               </Link>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl font-bold flex gap-0">Tution<span className="text-red-600">EX</span></a>
+          <a className="btn btn-ghost text-xl font-bold flex gap-0" href="/">Tution<span className="text-red-600">EX</span></a>
         </div>
         <div className="navbar-center hidden z-[50] lg:flex">
           <ul className="menu menu-horizontal px-1">

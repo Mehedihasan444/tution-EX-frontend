@@ -8,7 +8,7 @@ const About_Us = () => {
       <div
         className="bg-fixed rounded-md"
         style={{
-          backgroundImage: `url("https://i.ibb.co/ggBJ4xZ/pexels-pixabay-356056.jpg")`,
+          backgroundImage: `url("https://elearningindustry.com/wp-content/uploads/2021/08/Top-5-Benefits-Of-eLearning-Education.png")`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
@@ -17,9 +17,9 @@ const About_Us = () => {
         {/* <h1 className="">about</h1> */}
         <div className=" bg-[#000000bd]  rounded-md">
           <div className="text-center max-w-4xl mx-auto space-y-3 text-white p-20">
-            <p className="">START FROM SINCE 2000</p>
+            <p className="">START FROM SINCE 2010</p>
             <h1 className="text-6xl font-bold">
-              We Help Everyone Enjoy Amazing Services
+              We Help Everyone Enjoy Amazing Courses
             </h1>
             <div className="flex justify-center gap-20 items-center pt-5">
               <div className="">
@@ -87,7 +87,7 @@ const About_Us = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10">
         <div className="flex-1 space-y-4 text-center md:text-left">
           <p className="uppercase font-thin">our performance</p>
-          <h1 className="font-extrabold text-4xl md:text-6xl ">We Believe In Quality Services</h1>
+          <h1 className="font-extrabold text-4xl md:text-6xl ">We Believe In Quality Courses</h1>
           <p className="text-black px-5 md:px-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium mollis ex, vel interdum augue faucibus sit amet. Proin tempor purus ac suscipit sagittis. Nunc finibus euismod enim, eu finibus nunc ullamcorper et.</p>
         </div>
         <div className="flex-1 mx-5">
