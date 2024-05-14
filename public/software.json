@@ -1,0 +1,38 @@
+[
+    {
+        "id":123,
+        "title":"Music Streaming Web app",
+        "author":"Felix Kejilberg",
+        "rating":5,
+        "img":"https://i.ibb.co/vzYzG1C/card-1.jpg",
+        "category":"web app",
+        "description":"The Music Streaming Web application is a full-stack platform built with the MERN (MongoDB, Express, React, Node.js) stack. It allows users to share and stream their favorite audio files. Key features include user authentication, playlist creation, audio file upload, and responsive design for optimal viewing on any device. Additionally, a music streaming service is a web-based platform that enables users to stream songs to their computers or mobile devices. Some services even allow users to download songs for offline playback and upload their own music collections to the cloud2. If youre interested in creating your own music player, you can explore a simple example developed using HTML, CSS, and JavaScript"
+    },
+    {
+        "id":43,
+        "title":"BuyMart - Woocommerce",
+        "author":"Jack Septikai",
+        "rating":5,
+        "img":"https://i.ibb.co/hfjx7Tm/wordpress-Crd.jpg",
+        "category":"wordpress",
+        "description":"The Music Streaming Web application is a full-stack platform built with the MERN (MongoDB, Express, React, Node.js) stack. It allows users to share and stream their favorite audio files. Key features include user authentication, playlist creation, audio file upload, and responsive design for optimal viewing on any device. Additionally, a music streaming service is a web-based platform that enables users to stream songs to their computers or mobile devices. Some services even allow users to download songs for offline playback and upload their own music collections to the cloud2. If youre interested in creating your own music player, you can explore a simple example developed using HTML, CSS, and JavaScript"
+    },
+    {
+        "id":3,
+        "title":"Custom Web app",
+        "author":"Mark Kiplier",
+        "rating":5,
+        "img":"https://i.ibb.co/HPtg4MK/customapp.jpg",
+        "category":"custom web app",
+        "description":"The Music Streaming Web application is a full-stack platform built with the MERN (MongoDB, Express, React, Node.js) stack. It allows users to share and stream their favorite audio files. Key features include user authentication, playlist creation, audio file upload, and responsive design for optimal viewing on any device. Additionally, a music streaming service is a web-based platform that enables users to stream songs to their computers or mobile devices. Some services even allow users to download songs for offline playback and upload their own music collections to the cloud2. If youre interested in creating your own music player, you can explore a simple example developed using HTML, CSS, and JavaScript"
+    },
+    {
+        "id":23,
+        "title":"Rimani - Photoshop app",
+        "author":"Alex Cairek",
+        "rating":5,
+        "img":"https://i.ibb.co/q1JzF83/photoshopcard.jpg",
+        "category":"photoshop",
+        "description":"The Music Streaming Web application is a full-stack platform built with the MERN (MongoDB, Express, React, Node.js) stack. It allows users to share and stream their favorite audio files. Key features include user authentication, playlist creation, audio file upload, and responsive design for optimal viewing on any device. Additionally, a music streaming service is a web-based platform that enables users to stream songs to their computers or mobile devices. Some services even allow users to download songs for offline playback and upload their own music collections to the cloud2. If youre interested in creating your own music player, you can explore a simple example developed using HTML, CSS, and JavaScript"
+    }
+]
