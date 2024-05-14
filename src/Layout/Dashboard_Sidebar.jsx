@@ -15,8 +15,8 @@ const Dashboard_Sidebar = () => {
             className="drawer-overlay"
           ></label>
 
-          <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content space-y-3  ">
-            <h1 className=" text-2xl font-bold text-center my-5">Dashboard</h1>
+          <ul className="menu p-4 w-80 min-h-full bg-slate-200 text-base-content space-y-3  ">
+            <h1 className=" text-2xl font-bold text-center my-5 text-red-600">TutionEX</h1>
             {/* Sidebar content here */}
             {isAdmin ? (
               <>
@@ -38,19 +38,10 @@ const Dashboard_Sidebar = () => {
                     All Courses
                   </NavLink>
                 </li>
-                <li className="text-lg font-semibold">
-                  <NavLink to="/dashboard/admin/add_a_software">
-                    Add a software
-                  </NavLink>
-                </li>
-                <li className="text-lg font-semibold">
-                  <NavLink to="/dashboard/admin/all_softwares">
-                    All softwares
-                  </NavLink>
-                </li>
-                <li className="text-lg font-semibold">
+
+                {/* <li className="text-lg font-semibold">
                   <NavLink to="/dashboard/admin/all_users">All Users</NavLink>
-                </li>
+                </li> */}
               </>
             ) : (
               <>
@@ -75,14 +66,7 @@ const Dashboard_Sidebar = () => {
                     My Enrolled Courses
                   </NavLink>
                 </li>
-                <li className="text-lg font-semibold">
-                  <NavLink to="/dashboard/admin/add_a_software">
-                    Add a software
-                  </NavLink>
-                </li>
-                <li className="text-lg font-semibold">
-                  <NavLink to="/dashboard/my_software">My softwares</NavLink>
-                </li>
+
                 <li className="text-lg font-semibold">
                   <NavLink to="/dashboard/user/purchase_history">
                     Purchase History

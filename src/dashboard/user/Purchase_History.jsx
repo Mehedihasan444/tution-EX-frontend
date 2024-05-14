@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { DataContext } from "../../DataProvider/DataProvider";
 import Course_Card from "../../Components/Cards/Course_Card";
-import Software_card from "../../Components/Cards/Software_card";
+
 
 const Purchase_History = () => {
   const { allData } = useContext(DataContext);
@@ -19,13 +19,9 @@ const Purchase_History = () => {
             Nothing purchase yet!
           </h1>
         ) : (
-          allData[2]?.purchaseList?.map((item, idx) =>
-            item?.productCategory === "course" ? (
-              <Course_Card key={idx} course={item} />
-            ) : (
-              <Software_card key={idx} i={item}></Software_card>
-            )
-          )
+          allData[2]?.purchaseList?.map((item, idx) => (
+            <Course_Card key={idx} course={item} />
+          ))
         )}
       </div>
     </div>

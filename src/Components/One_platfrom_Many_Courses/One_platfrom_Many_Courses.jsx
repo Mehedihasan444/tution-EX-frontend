@@ -11,7 +11,7 @@ const One_platform_Many_Courses = () => {
       "Easy Online Learning Platform",
       "Friendly Environments & Teachers",
     ],
-    img: "https://asset.uibucket.net/html/ilearning/assets/images/home-1/ebook.png",
+    img: "https://img.freepik.com/premium-photo/indian-students-isolated-white-background_988871-5.jpg",
     tag: "Grow skill",
   };
 
