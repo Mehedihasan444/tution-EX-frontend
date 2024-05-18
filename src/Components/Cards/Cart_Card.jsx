@@ -68,7 +68,7 @@ const Cart_Card = ({ course, dataFetch, setTotalAmount, totalAmount }) => {
         <img
           src={course?.image}
           alt="course image"
-          className=" object-cover h-full w-full rounded-l-2xl"
+          className=" object-cover h-[200px] w-full rounded-l-2xl"
         />
       </div>
       <div className="p-5  pt-0 space-y-2">

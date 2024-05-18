@@ -8,7 +8,7 @@ const Dashboard = () => {
         <div className="">
         <div className="bg-slate-500 w-screen text-white flex justify-between items-center px-5 lg:hidden">
           <div className="">
-            <h1 className="font-bold text-2xl ">XYZ</h1>
+            <h1 className="font-bold text-2xl ">TutionEX</h1>
           </div>
           <div className="drawer-content flex flex-col items-center justify-center ">
             <label
