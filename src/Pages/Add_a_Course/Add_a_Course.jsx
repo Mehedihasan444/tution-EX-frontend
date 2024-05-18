@@ -149,7 +149,7 @@ const AddACourse = () => {
               <span className="text-red-500">Price is required</span>
             )}
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="category" className="block text-gray-700">
               Category:
             </label>
@@ -161,6 +161,26 @@ const AddACourse = () => {
               {...register("category", { required: true })}
               className="input input-bordered mt-1 block w-full"
             />
+            {errors.category && (
+              <span className="text-red-500">Category is required</span>
+            )}
+          </div> */}
+          <div className="mb-4">
+            <label htmlFor="category" className="block text-gray-700">
+              Category:
+            </label>
+            <select
+              type="text"
+              {...register("category", { required: true })}
+              className="input input-bordered mt-1 block w-full"
+            >
+              <option selected="Enter category...">Select Category</option>
+              <option value="Design">Design</option>
+              <option value="Development">Development</option>
+              <option value="Data Science">Data Science</option>
+              <option value="Photography">Photography</option>
+              <option value="Sales Marketing">Sales Marketing</option>
+            </select>
             {errors.category && (
               <span className="text-red-500">Category is required</span>
             )}

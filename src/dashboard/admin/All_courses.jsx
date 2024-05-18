@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { DataContext } from "../../DataProvider/DataProvider";
-import Course_Card from "../../Components/Cards/Course_Card";
+import Admin_course_card from "../../Components/Cards/Admin_course_card";
 
 
 const All_courses = () => {
@@ -18,7 +18,7 @@ const All_courses = () => {
           </h1>
         ) : (
           allData[0]?.map((course) => (
-            <Course_Card key={course?._id} course={course} />
+            <Admin_course_card key={course?._id} course={course} />
           ))
         )}
       </div>
